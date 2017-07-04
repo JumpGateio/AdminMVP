@@ -13,7 +13,9 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        //
+        \JumpGate\Users\Events\UserLoggedIn::class => [
+            \App\Listeners\Auth\UserLoggedIn\UpdateCharacters::class
+        ],
     ];
 
     /**
@@ -24,7 +26,6 @@ class EventServiceProvider extends ServiceProvider
     public function boot()
     {
         parent::boot();
-
         //
     }
 }

@@ -9,6 +9,7 @@
 
 <!-- javascript-->
 {!! HTML::script('js/app.js') !!}
+<script async src="https://gw2armory.com/gw2aEmbeds.js"></script>
 
 <!-- JS Include -->
 @section('jsInclude')
@@ -20,6 +21,9 @@
 <script>
   $(document).ready(function ()
   {
+    document.GW2A_EMBED_OPTIONS = {
+      lang: 'en',
+    };
     @if (session()->has('errors'))
     var errors = "There was a problem with your request.<br />"+{!! is_string(session()->get('errors')) ? '"'. session()->get('errors') .'"' : json_encode(implode('<br />', is_array(session()->get('errors')) ? session()->get('errors') : session()->get('errors')->all())) !!};
     @else

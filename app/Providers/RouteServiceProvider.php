@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Services\Users\Http\Routes\ApiKey;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
 use JumpGate\Core\Contracts\Routes;
@@ -24,6 +25,16 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected $providers = [
         \App\Http\Routes\Home::class,
+
+        \App\Services\Characters\Http\Routes\Index::class,
+        \App\Services\Characters\Http\Routes\Show::class,
+        \App\Services\Users\Http\Routes\ApiKey::class,
+
+        \JumpGate\Users\Http\Routes\Activation::class,
+        \JumpGate\Users\Http\Routes\Authentication::class,
+        \JumpGate\Users\Http\Routes\ForgotPassword::class,
+        \JumpGate\Users\Http\Routes\Registration::class,
+        \JumpGate\Users\Http\Routes\Logout::class,
     ];
 
     public function __construct($app)

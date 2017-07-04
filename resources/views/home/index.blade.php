@@ -62,15 +62,6 @@
   </style>
 @endsection
 <div class="flex-center position-ref full-height">
-  @if (Route::has('auth.login'))
-    <div class="top-right links">
-      <a href="{{ route('auth.login') }}">Login</a>
-      @if (Route::has('auth.register'))
-        <a href="{{ route('auth.register') }}">Register</a>
-      @endif
-    </div>
-  @endif
-
   <div class="content">
     <div class="title m-b-md">
       Laravel <span class="numbers">5.4</span>

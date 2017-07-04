@@ -173,6 +173,8 @@ return [
          */
         JumpGate\ViewResolution\Providers\ViewServiceProvider::class,
         JumpGate\Menu\MenuServiceProvider::class,
+        JumpGate\Users\Providers\UsersServiceProvider::class,
+        Kodeine\Acl\AclServiceProvider::class,
 
         /*
          * Application Service Providers...
