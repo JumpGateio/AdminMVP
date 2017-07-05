@@ -54,11 +54,6 @@ class MenuComposer
 
         if (auth()->check()) {
             $rightMenu->dropdown('user', auth()->user()->display_name, function (DropDown $dropDown) {
-                $dropDown->link('user_api_key', function (Link $link) {
-                    $link->name = 'APi Key';
-                    $link->url  = route('user.api-key.index');
-                });
-
                 $dropDown->link('user_logout', function (Link $link) {
                     $link->name = 'Logout';
                     $link->url  = route('auth.logout');

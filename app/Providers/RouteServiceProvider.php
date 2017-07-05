@@ -26,10 +26,6 @@ class RouteServiceProvider extends ServiceProvider
     protected $providers = [
         \App\Http\Routes\Home::class,
 
-        \App\Services\Characters\Http\Routes\Index::class,
-        \App\Services\Characters\Http\Routes\Show::class,
-        \App\Services\Users\Http\Routes\ApiKey::class,
-
         \JumpGate\Users\Http\Routes\Activation::class,
         \JumpGate\Users\Http\Routes\Authentication::class,
         \JumpGate\Users\Http\Routes\ForgotPassword::class,

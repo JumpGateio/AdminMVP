@@ -14,7 +14,7 @@ class EventServiceProvider extends ServiceProvider
      */
     protected $listen = [
         \JumpGate\Users\Events\UserLoggedIn::class => [
-            \App\Listeners\Auth\UserLoggedIn\UpdateCharacters::class
+            //
         ],
     ];
 

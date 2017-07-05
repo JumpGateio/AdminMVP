@@ -4,7 +4,7 @@
       <a href="{{ route('home') }}" class="uk-navbar-item uk-logo">Development Site</a>
     @else
       <a href="{{ route('home') }}" class="uk-navbar-item uk-logo uk-text-primary">
-        <img src="/img/logos/hot_logo.png" style="width: 93px;" alt="">
+        site<strong>ROCKET</strong>Labs
       </a>
     @endif
     @if (Menu::exists('leftMenu') && Menu::hasLinks('leftMenu'))

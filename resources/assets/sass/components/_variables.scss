@@ -17,8 +17,9 @@ $danger: #f0506e;
 $info: #74adf0;
 $gw2: #b40f0d;
 $hot: #7f9a3d;
+$site-rocket-purple: #3c334a;
 
-$primary: $hot;
+$primary: $site-rocket-purple;
 $primary-light: lighten($primary, 15%);
 $primary-dark: darken($primary, 15%);
 $global-link-color: $primary-light;
