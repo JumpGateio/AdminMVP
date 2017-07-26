@@ -9,12 +9,8 @@ window._ = require('lodash')
 window.$ = window.jQuery = require('jquery')
 window.Tether = require('tether')
 
-import UIkit from 'uikit';
-import Icons from 'uikit/dist/js/uikit-icons';
-
-// loads the Icon plugin
-UIkit.use(Icons);
-
+require('bootstrap-sass')
+require('bootbox')
 require('bootstrap-notify')
 
 /**

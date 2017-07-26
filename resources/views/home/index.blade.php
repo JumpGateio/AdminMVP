@@ -63,6 +63,7 @@
 @endsection
 <div class="flex-center position-ref full-height">
   <div class="content">
+
     <div class="title m-b-md">
       Laravel <span class="numbers">5.4</span>
       <div class="sub-title">
@@ -82,8 +83,7 @@
 
     <div class="links">
       <a target="_blank" href="https://github.com/JumpGateio">JumpGate</a>
-      <a target="_blank" href="https://v4-alpha.getbootstrap.com/getting-started/introduction/">Bootstrap 4</a>
-      <a target="_blank" href="https://getuikit.com/docs">UI Kit</a>
+      <a target="_blank" href="http://getbootstrap.com/css/">Bootstrap 3</a>
       <a target="_blank" href="http://vuejs.org/v2/guide/">VueJs 2</a>
     </div>
   </div>

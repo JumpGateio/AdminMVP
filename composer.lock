@@ -501,12 +501,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JumpGateio/Users.git",
-                "reference": "5fff9eeeaa5ab20ba0349d6aa954138b268aad1e"
+                "reference": "8f13da68c296626b491ce512d4329bbb39100306"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JumpGateio/Users/zipball/5fff9eeeaa5ab20ba0349d6aa954138b268aad1e",
-                "reference": "5fff9eeeaa5ab20ba0349d6aa954138b268aad1e",
+                "url": "https://api.github.com/repos/JumpGateio/Users/zipball/8f13da68c296626b491ce512d4329bbb39100306",
+                "reference": "8f13da68c296626b491ce512d4329bbb39100306",
                 "shasum": ""
             },
             "require": {
@@ -548,7 +548,7 @@
                 }
             ],
             "description": "Adds basic user functionality to a JumpGate site.",
-            "time": "2017-05-07 19:34:22"
+            "time": "2017-07-22 04:19:54"
         },
         {
             "name": "jumpgate/view-resolution",

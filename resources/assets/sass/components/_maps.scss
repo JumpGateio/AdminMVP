@@ -1,14 +1,12 @@
+
+
 // Color maps
 $pallet-colors: (
-                        primary: $primary,
-                        primary-light: $primary-light,
-                        primary-dark: $primary-dark,
-                        gw2: $gw2,
-                        hot: $hot,
-                        warning: $warning,
-                        info: $info,
-                        danger: $danger,
-                        success: $success,
+                        primary: $brand-primary,
+                        warning: $brand-warning,
+                        info: $brand-info,
+                        danger: $brand-danger,
+                        success: $brand-success,
                 );
 
 $grays: (
@@ -18,6 +16,5 @@ $grays: (
                 gray: $gray,
                 gray-dark: $gray-dark,
                 gray-darker: $gray-darker,
-                gray-darkest: $gray-darkest,
                 black: $black,
         );

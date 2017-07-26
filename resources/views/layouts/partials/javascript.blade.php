@@ -9,7 +9,6 @@
 
 <!-- javascript-->
 {!! HTML::script('js/app.js') !!}
-<script async src="https://gw2armory.com/gw2aEmbeds.js"></script>
 
 <!-- JS Include -->
 @section('jsInclude')

@@ -1,26 +1,23 @@
+
 // Fonts
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,300,400,600);
 @import "node_modules/font-awesome/scss/font-awesome";
 @import "node_modules/ionicons/dist/scss/ionicons";
+//@import "node_modules/octicons/lib/octicons";
 
 // Variables
-//@import "components/variables";
-
-// UI Kit
 @import "components/variables";
 
-@import "node_modules/uikit/src/scss/variables-theme";
-
-@import "node_modules/uikit/src/scss/mixins-theme";
-
-@import "node_modules/uikit/src/scss/uikit-theme";
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 @import "components/maps";
 @import "components/colors";
-@import "components/alert";
-@import "components/button";
-@import "components/background";
+@import "components/flex";
+@import "components/grid";
 @import "components/navbar";
-@import "components/progress";
-@import "components/scaffolding";
+@import "components/navs";
+@import "components/panels";
+@import "components/section";
+@import "components/sidebar";
 @import "components/typography";
