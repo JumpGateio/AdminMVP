@@ -5,24 +5,30 @@
   </head>
 
   <body>
-    <div id="app">
-      <div class="container-fluid" id="container" style="margin: 0; padding: 0;">
-        <div class="row">
-          @include('layouts.partials.menu')
+    <div id="app" class="uk-offcanvas-content">
+      <div id="container">
+        <div uk-grid>
+          <div class="uk-width-expand@m">
+            @include('layouts.partials.menu')
+          </div>
         </div>
 
         <div id="content">
-          <div class="section background-gray-darker">
+          <div class="uk-section uk-section-secondary uk-padding-small">
             @yield('title')
           </div>
-          <div class="nav-side-menu">
-            @yield('sidebar')
+          <div class="uk-grid-collapse" uk-grid uk-height-viewport="expand: true">
+            <div class="uk-width-1-6 uk-background-gray-lighter">
+              @yield('sidebar')
+            </div>
+            <div class="uk-width-5-6">
+              @if (isset($content))
+                {!! $content !!}
+              @else
+                @yield('content')
+              @endif
+            </div>
           </div>
-          @if (isset($content))
-            {!! $content !!}
-          @else
-            @yield('content')
-          @endif
         </div>
 
         @section('footer')

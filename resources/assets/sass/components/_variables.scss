@@ -1,40 +1,30 @@
-// Body
-$body-bg: #f5f8fa;
-
-// Borders
-$laravel-border-color: darken($body-bg, 10%);
-$list-group-border: $laravel-border-color;
-$navbar-default-border: $laravel-border-color;
-$panel-default-border: $laravel-border-color;
-$panel-inner-border: $laravel-border-color;
-
-// Brands
-$brand-primary: #3097d1;
-$brand-info: #8eb4cb;
-$brand-success: #2ab27b;
-$brand-warning: #cbb956;
-$brand-danger: #bf5329;
-
-// Extra Colors
+// Gray scale
 $white: #ffffff;
 $black: #000000;
 
-// Typography
-$font-family-sans-serif: 'Raleway', sans-serif;
-$font-size-base: 14px;
-$line-height-base: 1.6;
-$text-color: #636b6f;
+$gray-base: #000000;
+$gray-lighter: lighten($gray-base, 93.5%);
+$gray-light: lighten($gray-base, 46.7%);
+$gray: lighten($gray-base, 33.5%);
+$gray-dark: lighten($gray-base, 20%);
+$gray-darker: lighten($gray-base, 13.5%);
+$gray-darkest: lighten($gray-base, 7%);
 
-// Navbar
-$navbar-default-bg: #ffffff;
+// Colorful
+$success: #32d296;
+$warning: #faa05a;
+$danger: #f0506e;
+$info: #74adf0;
+$gw2: #b40f0d;
+$hot: #7f9a3d;
+$site-rocket-purple: #3c334a;
 
-// Buttons
-$btn-default-color: $text-color;
+$primary: $site-rocket-purple;
+$primary-light: lighten($primary, 15%);
+$primary-dark: darken($primary, 15%);
+$global-link-color: $primary-light;
+$global-link-hover-color: lighten($primary, 30%);
+$global-primary-background: $primary-light;
 
-// Inputs
-$input-border: lighten($text-color, 40%);
-$input-border-focus: lighten($brand-primary, 25%);
-$input-color-placeholder: lighten($text-color, 30%);
-
-// Panels
-$panel-default-heading-bg: #ffffff;
+//$global-font-family: "Roboto Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+//$base-body-font-weight: 100 !default;

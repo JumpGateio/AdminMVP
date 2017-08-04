@@ -1,10 +1,16 @@
 @if ($item->isDropDown() && $item->hasLinks())
-  <li class="dropdown {{ $item->active ? 'active' : '' }}">
+  <div class="{{ $item->active ? 'uk-active' : '' }}">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ $item->name }}<b class="caret"></b></a>
-    <ul class="dropdown-menu">
+    <div class="uk-navbar-dropdown">
       @each('layouts.partials.menu.sub-menu', $item->links, 'item')
-    </ul>
-  </li>
+    </div>
+  </div>
 @else
-  @include('layouts.partials.menu.item')
+  <div class="{{ $item->active ? 'uk-active' : '' }}">
+    @if ($item->getOption('text') == true)
+      <p>{!! $item->name !!}</p>
+    @else
+      {!! HTML::link($item->url, $item->name, $item->options + ['class' => $item->active ? 'uk-active' : null]) !!}
+    @endif
+  </div>
 @endif
