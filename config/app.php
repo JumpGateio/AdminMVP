@@ -94,6 +94,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | CSS Framework
+    |--------------------------------------------------------------------------
+    |
+    | JumpGate (and its packages) comes with some default view files to make getting
+    | started quicker.  You can set your framework value below.  This can be one of
+    | the following frameworks:
+    | bootstrap4, uikit
+    |
+    */
+    'css_framework' => env('CSS_FRAMEWORK', 'bootstrap3'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Encryption Key
     |--------------------------------------------------------------------------
     |
@@ -175,6 +188,7 @@ return [
         JumpGate\Menu\MenuServiceProvider::class,
         JumpGate\Users\Providers\UsersServiceProvider::class,
         Kodeine\Acl\AclServiceProvider::class,
+        JumpGate\Admin\Providers\AdminServiceProvider::class,
 
         /*
          * Application Service Providers...

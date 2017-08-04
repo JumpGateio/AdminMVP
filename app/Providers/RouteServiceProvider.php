@@ -26,6 +26,8 @@ class RouteServiceProvider extends ServiceProvider
     protected $providers = [
         \App\Http\Routes\Home::class,
 
+        \App\Services\Administrating\Http\Routes\Users::class,
+
         \JumpGate\Users\Http\Routes\Activation::class,
         \JumpGate\Users\Http\Routes\Authentication::class,
         \JumpGate\Users\Http\Routes\ForgotPassword::class,
@@ -122,6 +124,8 @@ class RouteServiceProvider extends ServiceProvider
                 'prefix'     => $provider->getPrefix(),
                 'namespace'  => $provider->getNamespace(),
                 'middleware' => $provider->getMiddleware(),
+                'is'         => $provider->getRole(),
+                'can'        => $provider->getPermissions(),
             ], function ($router) use ($provider) {
                 $provider->routes($router);
             });

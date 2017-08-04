@@ -16,7 +16,7 @@ class Handler extends ExceptionHandler
     protected $dontReport = [
         \Illuminate\Auth\AuthenticationException::class,
         \Illuminate\Auth\Access\AuthorizationException::class,
-        \Symfony\Component\HttpKernel\Exception\HttpException::class,
+        // \Symfony\Component\HttpKernel\Exception\HttpException::class,
         \Illuminate\Database\Eloquent\ModelNotFoundException::class,
         \Illuminate\Session\TokenMismatchException::class,
         \Illuminate\Validation\ValidationException::class,
@@ -69,24 +69,19 @@ class Handler extends ExceptionHandler
 
         // Is in debug mode, show the full whoops page.
         if (config('app.debug')) {
-            return parent::convertExceptionToResponse($exception);
+            // return parent::convertExceptionToResponse($exception);
+        }
+
+        // If it is a redirect exception, handle the redirect.
+        if ($exception instanceof \Symfony\Component\HttpKernel\Exception\HttpException) {
+            return response()->view('errors.general', ['error' => $exception], 500);
         }
 
         // Try to send the error to a custom view page.
         $code = $exception->getCode();
-        if (view()->exists("errors.{$code}")) {
-            return response()->view("errors.{$code}", [], $code);
-        }
 
-        // If its an HTTP exception it will have a status code.
-        //  Use that status code to render a custom view.
-        if ($this->isHttpException($exception)) {
-            $code = $exception->getStatusCode();
-            if (view()->exists("errors.{$code}")) {
-                return response()->view("errors.{$code}", [], $code);
-            }
-
-            return $this->renderHttpException($exception);
+        if ($code > 0) {
+            return response()->view('errors.general', ['error' => $exception], $code);
         }
 
         // Render it with the default laravel settings.

@@ -16,6 +16,7 @@ class ComposerServiceProvider extends ServiceProvider
         view()->composer(
             [
                 'layouts.default',
+                'layouts.sidebar',
             ],
             'App\Http\Composers\MenuComposer'
         );

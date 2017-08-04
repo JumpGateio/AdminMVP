@@ -13,7 +13,7 @@
           </div>
         </div>
 
-        <div id="content">
+        <div id="content" style="margin-top: -24px;">
           <div class="uk-section uk-section-secondary uk-padding-small">
             @yield('title')
           </div>

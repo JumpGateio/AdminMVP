@@ -50,15 +50,23 @@ class MenuComposer
                 $link->name = 'Register';
                 $link->url  = route('auth.register');
             });
+
+            return true;
         }
 
-        if (auth()->check()) {
-            $rightMenu->dropdown('user', auth()->user()->display_name, function (DropDown $dropDown) {
-                $dropDown->link('user_logout', function (Link $link) {
-                    $link->name = 'Logout';
-                    $link->url  = route('auth.logout');
+        if (auth()->user()->isRole('admin')) {
+            $rightMenu->dropdown('admin', 'Admin', function (DropDown $dropDown) {
+                $dropDown->link('admin_user', function (Link $link) {
+                    $link->name = 'Users';
+                    $link->url  = route('admin.user.index');
                 });
             });
         }
+        $rightMenu->dropdown('user', auth()->user()->display_name, function (DropDown $dropDown) {
+            $dropDown->link('user_logout', function (Link $link) {
+                $link->name = 'Logout';
+                $link->url  = route('auth.logout');
+            });
+        });
     }
 }
