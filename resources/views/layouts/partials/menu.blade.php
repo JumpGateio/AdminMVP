@@ -3,7 +3,7 @@
     <div style="background-color: #333; background-image: repeating-linear-gradient(315deg, transparent, transparent 15px, rgba(255,255,0,1) 15px, rgba(255,255,0,1) 30px); width:100%; height: 10px;"></div>
   @endif
   <div id="header">
-    <nav class="uk-navbar-container uk-padding-remove uk-navbar-hot" uk-navbar>
+    <nav class="uk-navbar-container uk-padding-remove uk-background-gray-lighter" uk-navbar>
       <div class="uk-navbar-left uk-padding-remove">
         @if (app()->environment() == 'stage')
           <a href="{{ route('home') }}" class="uk-navbar-item uk-logo">Development Site</a>

@@ -8,8 +8,8 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=5.6.4",
-        "barryvdh/laravel-debugbar": "^2.2",
+        "php": ">=7.0.0",
+        "jumpgate/admin": "*@dev",
         "jumpgate/core": "dev-master",
         "jumpgate/menu": "~1.0",
         "jumpgate/users": "dev-master",
@@ -19,12 +19,13 @@
         "laravelcollective/html": "^5.2"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "~2.3",
+        "barryvdh/laravel-ide-helper": "^2.1@dev",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~5.7",
         "symfony/css-selector": "3.1.*",
-        "symfony/dom-crawler": "3.1.*",
-        "barryvdh/laravel-ide-helper": "^2.1@dev"
+        "symfony/dom-crawler": "3.1.*"
     },
     "autoload": {
         "classmap": [
@@ -62,5 +63,11 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../Admin"
+        }
+    ]
 }

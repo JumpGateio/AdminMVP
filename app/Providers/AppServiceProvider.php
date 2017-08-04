@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        if (app()->environment('local') && app()->bound('debugbar')) {
+        if (config('app.debug')) {
             $this->app->register(DebugbarServiceProvider::class);
             $this->app->register(IdeHelperServiceProvider::class);
         }
