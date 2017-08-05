@@ -12,7 +12,7 @@ class Users extends BaseRoute implements Routes
 
     public $prefix = 'admin/user';
 
-    public $middleware = ['web', 'acl'];
+    public $middleware = ['web', 'acl', 'auth'];
 
     public $role = 'admin';
 

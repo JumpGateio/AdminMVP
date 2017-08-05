@@ -10,8 +10,8 @@ return [
     | can define your model here.
     */
 
-    'role'       => Kodeine\Acl\Models\Eloquent\Role::class,
-    'permission' => Kodeine\Acl\Models\Eloquent\Permission::class,
+    'role'       => JumpGate\Users\Models\Role::class,
+    'permission' => JumpGate\Users\Models\Permission::class,
 
     /*
     |--------------------------------------------------------------------------

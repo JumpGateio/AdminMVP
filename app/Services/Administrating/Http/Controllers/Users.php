@@ -48,7 +48,7 @@ class Users extends AdminBaseController
                 'select',
                 Status::pluck('label', 'id')->prepend('All statuses', 0),
             ],
-            'role'      => [
+            'roles'      => [
                 'select',
                 Role::pluck('name', 'id')->prepend('All roles', 0),
             ],
