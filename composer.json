@@ -12,7 +12,7 @@
         "jumpgate/admin": "*@dev",
         "jumpgate/core": "dev-master",
         "jumpgate/menu": "~1.0",
-        "jumpgate/users": "*@dev",
+        "jumpgate/users": "dev-master",
         "jumpgate/view-resolution": "~1.0",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
@@ -65,10 +65,6 @@
     },
     "minimum-stability": "dev",
     "repositories": [
-        {
-            "type": "path",
-            "url": "../Users"
-        },
         {
             "type": "path",
             "url": "../Admin"

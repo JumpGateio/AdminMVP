@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "45e2198775f73ac85188dc2ccefec6ff",
+    "content-hash": "a713fb593faa0c369615857f973d3fbd",
     "packages": [
         {
             "name": "camroncade/timezone",
@@ -477,11 +477,16 @@
         {
             "name": "jumpgate/users",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JumpGateio/Users.git",
+                "reference": "1f0613930d8a8263cbf3dc04b045d030987c69a5"
+            },
             "dist": {
-                "type": "path",
-                "url": "../Users",
-                "reference": "a78161d7587c2b1765d4441b2e438a9f6505ae13",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/JumpGateio/Users/zipball/1f0613930d8a8263cbf3dc04b045d030987c69a5",
+                "reference": "1f0613930d8a8263cbf3dc04b045d030987c69a5",
+                "shasum": ""
             },
             "require": {
                 "jumpgate/core": "dev-master",
@@ -507,26 +512,22 @@
                     "JumpGate\\Users\\": "src/JumpGate/Users"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\": "tests",
-                    "App\\Models\\": "tests/resources"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Travis Blasingame",
-                    "email": "tpblasingame@gmail.com"
-                },
-                {
                     "name": "Brandon Hyde",
                     "email": "hyde.brandon@gmail.com"
+                },
+                {
+                    "name": "Travis Blasingame",
+                    "email": "tpblasingame@gmail.com"
                 }
             ],
-            "description": "Adds basic user functionality to a JumpGate site."
+            "description": "Adds basic user functionality to a JumpGate site.",
+            "time": "2017-08-07T18:32:58+00:00"
         },
         {
             "name": "jumpgate/view-resolution",
