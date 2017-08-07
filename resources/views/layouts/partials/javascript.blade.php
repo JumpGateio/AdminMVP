@@ -100,7 +100,7 @@
       e.preventDefault();
       var location = $(this).attr('href');
 
-      UiKit.modal.confirm(
+      UIkit.modal.confirm(
         '<h2>You are about to delete an item</h2>This is not reversible.  Are you sure you want to proceed?')
            .then(function () {
              window.location.replace(location);
@@ -110,7 +110,7 @@
       e.preventDefault();
       var location = $(this).attr('href');
 
-      UiKit.modal.confirm(
+      UIkit.modal.confirm(
         '<h2>Verify before continuing</h2>Are you sure you want to continue?')
            .then(function () {
              window.location.replace(location);
@@ -120,26 +120,21 @@
     (function () {
       var laravel = {
         initialize: function () {
-          console.log('LOADED');
           this.methodLinks = $('a[data-method]');
 
           laravel.registerEvents();
         },
 
         registerEvents: function () {
-          console.log('REGISTERING');
           this.methodLinks.on('click', this.handleMethod);
         },
 
         handleMethod: function (e) {
-          console.log('CLICKED');
           var link       = $(this);
           var httpMethod = link.data('method').toUpperCase();
           var title      = link.data('title');
           var message    = link.data('message');
           var backdrop   = link.data('backdrop');
-
-          console.log(httpMethod);
 
           // If the data-method attribute is not DELETE,
           // then we don't know what to do. Just ignore.
@@ -155,7 +150,7 @@
           title   = title == null ? 'You are about to delete an item' : title
           message = message == null ? 'This is not reversible.  Are you sure you want to proceed?' : message
 
-          return UiKit.modal.confirm(
+          return UIkit.modal.confirm(
             '<h2>' + title + '</h2>' + message)
                       .then(function () {
                         var form = laravel.createForm(link);
