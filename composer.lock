@@ -334,12 +334,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JumpGateio/Core.git",
-                "reference": "de8715da8d6a6cdfa9192c089465d3b46226f4c2"
+                "reference": "ee3ca742621197b4bfaa671c78f2366b7519e60c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JumpGateio/Core/zipball/de8715da8d6a6cdfa9192c089465d3b46226f4c2",
-                "reference": "de8715da8d6a6cdfa9192c089465d3b46226f4c2",
+                "url": "https://api.github.com/repos/JumpGateio/Core/zipball/ee3ca742621197b4bfaa671c78f2366b7519e60c",
+                "reference": "ee3ca742621197b4bfaa671c78f2366b7519e60c",
                 "shasum": ""
             },
             "require": {
@@ -388,7 +388,7 @@
                 }
             ],
             "description": "A core set of features for laravel sites.",
-            "time": "2017-06-09T19:35:46+00:00"
+            "time": "2017-08-04T20:25:26+00:00"
         },
         {
             "name": "jumpgate/database",
