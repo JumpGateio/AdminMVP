@@ -70,7 +70,7 @@ class Handler extends ExceptionHandler
 
         // Is in debug mode, show the full whoops page.
         if (config('app.debug')) {
-            // return parent::convertExceptionToResponse($exception);
+            return parent::convertExceptionToResponse($exception);
         }
 
         // If it is a redirect exception, handle the redirect.
