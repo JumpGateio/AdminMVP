@@ -1,4 +1,23 @@
+@section('title')
+  User: {{ $resource->display_name }}
+
+  <a class="uk-button uk-button-default uk-button-small uk-float-right uk-margin-small-right" href="{{ route($routes['index']) }}">
+    <i class="fa fa-fw fa-long-arrow-left"></i>&nbsp;Back
+  </a>
+  <a class="uk-button uk-button-primary uk-background-primary-light uk-text-white uk-button-small uk-float-right uk-margin-small-right" href="{{ route($routes['edit'], $resource->id) }}">
+    <i class="fa fa-fw fa-pencil"></i>&nbsp;Edit
+  </a>
+@endsection
 <div uk-grid>
+  <div class="uk-width-1-1 uk-background-gray-lighter uk-margin-small-left">
+    <small>
+      <ul class="uk-breadcrumb uk-float-left uk-margin-remove-bottom">
+        <li><a href="{{ route($routes['index']) }}">Dashboard</a></li>
+        <li><a href="{{ route($routes['index']) }}">List Users</a></li>
+        <li><span>User: {{ $resource->display_name }}</span></li>
+      </ul>
+    </small>
+  </div>
   <div class="uk-width-2-3">
     <div class="uk-card uk-card-default">
       <div class="uk-card-header uk-background-primary-light uk-text-white">
@@ -61,14 +80,14 @@
               <small class="uk-text-muted">{{ $resource->blocked_at->format('m/d/Y g:ia') }}</small>
             </div>
             <div>
-              <a class="uk-button uk-button-small uk-button-secondary uk-width-1-1">Unblock</a>
+              <a href="{{ route($routes['block'], [$resource->id, 0]) }}" class="uk-button uk-button-small uk-button-secondary uk-width-1-1">Unblock</a>
             </div>
           @else
             <div>
               Not Blocked&nbsp;<small class="uk-text-muted">(Can Login)</small>
             </div>
             <div>
-              <a class="uk-button uk-button-small uk-button-secondary uk-width-1-1">Block</a>
+              <a href="{{ route($routes['block'], [$resource->id, 1]) }}" class="uk-button uk-button-small uk-button-secondary uk-width-1-1">Block</a>
             </div>
           @endif
         </div>
@@ -78,10 +97,10 @@
           <div>
             Password Set
             <br />
-            {{--<small class="uk-text-muted">{{ $resource->password_updated_at->format('m/d/Y g:ia') or 'Never' }}</small>--}}
+            <small class="uk-text-muted">{{ is_null($resource->password_updated_at) ? 'Never' : $resource->password_updated_at->format('m/d/Y g:ia') }}</small>
           </div>
           <div>
-            <a class="uk-button uk-button-small uk-button-secondary uk-width-1-1">Reset Password</a>
+            <a href="{{ route($routes['reset_password'], $resource->id) }}" class="uk-button uk-button-small uk-button-secondary uk-width-1-1">Reset Password</a>
           </div>
         </div>
       </div>
