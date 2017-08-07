@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a713fb593faa0c369615857f973d3fbd",
+    "content-hash": "caa40c5654c221ff9a9e40dbe9e2543c",
     "packages": [
         {
             "name": "camroncade/timezone",
@@ -279,11 +279,16 @@
         {
             "name": "jumpgate/admin",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JumpGateio/Admin.git",
+                "reference": "998c7e09eefec23dbc409651b63d9309b656ddac"
+            },
             "dist": {
-                "type": "path",
-                "url": "../Admin",
-                "reference": "5dc93959fa606c792806970bb7934fa4540b03cf",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/JumpGateio/Admin/zipball/998c7e09eefec23dbc409651b63d9309b656ddac",
+                "reference": "998c7e09eefec23dbc409651b63d9309b656ddac",
+                "shasum": ""
             },
             "require": {
                 "jumpgate/core": "dev-master",
@@ -316,7 +321,12 @@
                     "email": "stygian.warlock.v2@gmail.com"
                 }
             ],
-            "description": "A basic set of administration features for laravel sites."
+            "description": "A basic set of administration features for laravel sites.",
+            "support": {
+                "source": "https://github.com/JumpGateio/Admin/tree/master",
+                "issues": "https://github.com/JumpGateio/Admin/issues"
+            },
+            "time": "2017-08-07T13:10:22+00:00"
         },
         {
             "name": "jumpgate/core",

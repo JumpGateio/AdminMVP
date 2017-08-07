@@ -66,8 +66,8 @@
     "minimum-stability": "dev",
     "repositories": [
         {
-            "type": "path",
-            "url": "../Admin"
+            "type": "vcs",
+            "url": "git@github.com:JumpGateio/Admin.git"
         }
     ]
 }
