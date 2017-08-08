@@ -9,15 +9,19 @@
   </a>
 @endsection
 <div uk-grid>
-  <div class="uk-width-1-1 uk-background-gray-lighter uk-margin-small-left">
-    <small>
-      <ul class="uk-breadcrumb uk-float-left uk-margin-remove-bottom">
-        <li><a href="{{ route($routes['index']) }}">Dashboard</a></li>
-        <li><a href="{{ route($routes['index']) }}">List Users</a></li>
-        <li><span>User: {{ $resource->display_name }}</span></li>
-      </ul>
-    </small>
+  <div class="uk-width-1-1">
+    <div class="uk-background-gray-lighter uk-margin-small-left">
+      <small>
+        <ul class="uk-breadcrumb uk-float-left uk-margin-remove-bottom">
+          <li><a href="{{ route($routes['index']) }}">Dashboard</a></li>
+          <li><a href="{{ route($routes['index']) }}">List Users</a></li>
+          <li><span>User: {{ $resource->display_name }}</span></li>
+        </ul>
+      </small>
+    </div>
   </div>
+</div>
+<div uk-grid>
   <div class="uk-width-2-3">
     <div class="uk-card uk-card-default">
       <div class="uk-card-header uk-background-primary-light uk-text-white">
@@ -100,7 +104,8 @@
             <small class="uk-text-muted">{{ is_null($resource->password_updated_at) ? 'Never' : $resource->password_updated_at->format('m/d/Y g:ia') }}</small>
           </div>
           <div>
-            <a href="{{ route($routes['reset_password'], $resource->id) }}" class="uk-button uk-button-small uk-button-secondary uk-width-1-1">Reset Password</a>
+            <a href="{{ route($routes['reset_password'], $resource->id) }}" class="uk-button uk-button-small uk-button-secondary uk-width-1-1">Reset
+                                                                                                                                               Password</a>
           </div>
         </div>
       </div>
