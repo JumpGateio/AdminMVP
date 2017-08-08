@@ -22,6 +22,12 @@ class ComposerServiceProvider extends ServiceProvider
         );
         view()->composer(
             [
+                'layouts.sidebar',
+            ],
+            'App\Http\Composers\AdminMenuComposer'
+        );
+        view()->composer(
+            [
                 'layouts.partials.javascript',
             ],
             'App\Http\Composers\RouteComposer'
