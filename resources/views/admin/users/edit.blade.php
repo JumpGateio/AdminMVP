@@ -77,7 +77,7 @@
         </div>
       </div>
       <div class="uk-card-footer uk-padding-small">
-        {!! Form::submit('Create user', ['class' => 'uk-button uk-button-primary uk-text-white']) !!}
+        {!! Form::submit('Update user', ['class' => 'uk-button uk-button-primary uk-text-white']) !!}
       </div>
       {!! Form::close() !!}
     </div>
