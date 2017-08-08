@@ -8,7 +8,7 @@
 {{--<link rel="shortcut icon" href="{{ URL::to('/favicon.ico') }}" />--}}
 
 <!-- Local styles -->
-{!! HTML::style('css/app.css') !!}
+{!! HTML::style(mix('/css/app.css')) !!}
 <link rel="shortcut icon" href="https://www.siterocket.com/img/favicon.png" type="image/png">
 {{--<link rel="stylesheet" href="https://www.siterocket.com/css/default-1d54e52f.css">--}}
 
