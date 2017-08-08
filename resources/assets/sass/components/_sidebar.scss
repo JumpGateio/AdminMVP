@@ -56,7 +56,6 @@
   ul .active, li .active {
     border-left:      3px solid #d19b3d;
     background-color: #4f5b69;
-    margin-bottom:    -1px;
   }
   ul .sub-menu li.active, li .sub-menu li.active, ul .sub-menu li.active a, li .sub-menu li.active a {
     color: #d19b3d;
@@ -80,7 +79,8 @@
     vertical-align: middle;
   }
   ul.sub-menu {
-    margin-left: -3px;
+    margin-left:   -3px;
+    margin-bottom: -1px;
     li {
       a {
         display:     inline-block;
