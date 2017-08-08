@@ -41,12 +41,9 @@ class GenerateTestUsers extends Command
     {
         $count = (int)$this->argument('count');
 
-        for ($i = 1; $i <= $count; $i++) {
-            $user = factory(\App\Models\User::class)->create();
-
-            $random = rand(1, 2);
-
-            $user->roles()->attach($random);
-        }
+        factory(\App\Models\User::class, $count)->create()->each(function ($user) {
+            $user->details()->save(factory(\JumpGate\Users\Models\User\Detail::class)->make());
+            $user->roles()->attach(rand(1, 2));
+        });
     }
 }
