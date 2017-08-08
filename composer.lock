@@ -282,12 +282,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JumpGateio/Admin.git",
-                "reference": "998c7e09eefec23dbc409651b63d9309b656ddac"
+                "reference": "a16415c9271fb60f8878ba717d8deb0b4c14cb58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JumpGateio/Admin/zipball/998c7e09eefec23dbc409651b63d9309b656ddac",
-                "reference": "998c7e09eefec23dbc409651b63d9309b656ddac",
+                "url": "https://api.github.com/repos/JumpGateio/Admin/zipball/a16415c9271fb60f8878ba717d8deb0b4c14cb58",
+                "reference": "a16415c9271fb60f8878ba717d8deb0b4c14cb58",
                 "shasum": ""
             },
             "require": {
@@ -326,7 +326,7 @@
                 "source": "https://github.com/JumpGateio/Admin/tree/master",
                 "issues": "https://github.com/JumpGateio/Admin/issues"
             },
-            "time": "2017-08-07T13:10:22+00:00"
+            "time": "2017-08-08T02:31:04+00:00"
         },
         {
             "name": "jumpgate/core",

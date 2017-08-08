@@ -18,7 +18,7 @@
             @yield('title')
           </div>
           <div class="uk-grid-collapse" uk-grid uk-height-viewport="expand: true">
-            <div class="uk-width-1-6 uk-background-gray-lighter">
+            <div class="uk-width-1-6 uk-background-gray-dark uk-sidebar">
               @yield('sidebar')
             </div>
             <div class="uk-width-5-6">
