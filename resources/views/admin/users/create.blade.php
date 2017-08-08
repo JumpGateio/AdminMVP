@@ -32,30 +32,30 @@
         </div>
 
         <div class="uk-margin">
-          {!! Form::label('details[display_name]', 'Display Name', ['class' => 'uk-form-label']) !!}
+          {!! Form::label('display_name', 'Display Name', ['class' => 'uk-form-label']) !!}
           <div class="uk-form-controls">
-            {!! Form::text('details[display_name]', null, ['class' => 'uk-input', 'id' => 'details[display_name]']) !!}
+            {!! Form::text('display_name', null, ['class' => 'uk-input', 'id' => 'display_name']) !!}
           </div>
         </div>
 
         <div class="uk-margin">
-          {!! Form::label('details[first_name]', 'First Name', ['class' => 'uk-form-label']) !!}
+          {!! Form::label('first_name', 'First Name', ['class' => 'uk-form-label']) !!}
           <div class="uk-form-controls">
-            {!! Form::text('details[first_name]', null, ['class' => 'uk-input', 'id' => 'details[first_name]']) !!}
+            {!! Form::text('first_name', null, ['class' => 'uk-input', 'id' => 'first_name']) !!}
           </div>
         </div>
 
         <div class="uk-margin">
-          {!! Form::label('details[middle_name]', 'Middle Name', ['class' => 'uk-form-label']) !!}
+          {!! Form::label('middle_name', 'Middle Name', ['class' => 'uk-form-label']) !!}
           <div class="uk-form-controls">
-            {!! Form::text('details[middle_name]', null, ['class' => 'uk-input', 'id' => 'details[middle_name]']) !!}
+            {!! Form::text('middle_name', null, ['class' => 'uk-input', 'id' => 'middle_name']) !!}
           </div>
         </div>
 
         <div class="uk-margin">
-          {!! Form::label('details[last_name]', 'Last Name', ['class' => 'uk-form-label']) !!}
+          {!! Form::label('last_name', 'Last Name', ['class' => 'uk-form-label']) !!}
           <div class="uk-form-controls">
-            {!! Form::text('details[last_name]', null, ['class' => 'uk-input', 'id' => 'details[last_name]']) !!}
+            {!! Form::text('last_name', null, ['class' => 'uk-input', 'id' => 'last_name']) !!}
           </div>
         </div>
 
