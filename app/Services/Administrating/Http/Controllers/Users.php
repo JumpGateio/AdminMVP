@@ -79,8 +79,9 @@ class Users extends AdminBaseController
 
         try {
             $resource->update(request('user'));
+            $resource->setStatus(request('status_id'));
             $resource->details->update(request('details'));
-            $resource->roles()->sync(request('roles'));
+            $resource->syncRoles(request('roles'));
         } catch (\Exception $exception) {
             DB::rollback();
 

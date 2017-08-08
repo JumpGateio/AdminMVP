@@ -65,14 +65,14 @@
         <div class="uk-margin">
           {!! Form::label('roles', 'Roles', ['class' => 'uk-form-label']) !!}
           <div class="uk-form-controls">
-            {!! Form::select('roles', $roles, $resource->roles->id->toArray(), ['class' => 'uk-select', 'id' => 'roles', 'multiple' => 'multiple']) !!}
+            {!! Form::select('roles[]', $roles, $resource->roles->id->toArray(), ['class' => 'uk-select', 'id' => 'roles', 'multiple' => 'multiple']) !!}
           </div>
         </div>
 
         <div class="uk-margin">
-          {!! Form::label('user[status_id]', 'Status', ['class' => 'uk-form-label']) !!}
+          {!! Form::label('status_id', 'Status', ['class' => 'uk-form-label']) !!}
           <div class="uk-form-controls">
-            {!! Form::select('user[status_id', $statuses, $resource->status_id, ['class' => 'uk-select', 'id' => 'user[status_id]']) !!}
+            {!! Form::select('status_id', $statuses, $resource->status_id, ['class' => 'uk-select', 'id' => 'status_id']) !!}
           </div>
         </div>
       </div>
